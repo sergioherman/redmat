@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelagem Física do Problema</title>
+</head>
+<body>
+    <h1>Modelagem de um Sistema Massa-Mola</h1>
+    <img src="" alt="Imagem de um sistema massa-mola" />
+
+    <p>
+        A Segunda Lei de Newton afirma que a força resultante que atua sobre um corpo é igual à sua massa vezes sua aceleração. É dada pela equação:
+    </p>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>F</mi>
+        <mo>=</mo>
+        <mi>m</mi>
+        <mo>&#8290;</mo>
+        <mi>a</mi>
+    </math>
+    <p>
+        Por outro lado, a Lei de Hooke descreve a força restitutiva exercida por uma mola. Ela afirma que a força é proporcional ao deslocamento da mola a partir de sua posição de equilíbrio. A constante de proporcionalidade é a constante da mola, denotada por k. A Lei de Hooke é dada pela equação:
+    </p>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>F</mi>
+        <mo>=</mo>
+        <mo>-</mo>
+        <mi>k</mi>
+        <mo>&#8290;</mo>
+        <mi>x</mi>
+    </math>
+    <p>
+        Aqui, x é o deslocamento da mola a partir de sua posição de equilíbrio. O sinal negativo indica que a força é exercida na direção oposta ao deslocamento.
+    </p>
+    <p>
+        Agora, se considerarmos um sistema massa-mola onde a massa do objeto é m e a constante da mola é k, podemos usar essas duas leis para modelar o sistema. A força resultante no sistema é a soma das forças exercidas sobre a massa, que neste caso, é apenas a força da mola. Portanto, a equação do movimento, que é a Segunda Lei de Newton, torna-se:
+    </p>
+
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>m</mi>
+        <mo>&#8290;</mo>
+        <mi>a</mi>
+        <mo>=</mo>
+        <mo>-</mo>
+        <mi>k</mi>
+        <mo>&#8290;</mo>
+        <mi>x</mi>
+    </math>
+
+    <p>
+        Como a aceleração a é a segunda derivada da posição em relação ao tempo, podemos reescrever a equação acima como:
+    </p>
+
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>m</mi>
+        <mo>&#8290;</mo>
+        <mfrac>
+            <mrow>
+            <msup>
+                <mi>d</mi>
+                <mn>2</mn>
+            </msup>
+            <mi>x</mi>
+            </mrow>
+            <mrow>
+            <mn>d</mn>
+            <msup>
+                <mi>t</mi>
+                <mi>2</mi>
+            </msup>
+            </mrow>
+        </mfrac>
+        <mo>=</mo>
+        <mo>-</mo>
+        <mi>k</mi>
+        <mo>&#8290;</mo>
+        <mi>x</mi>
+    </math>
+
+    <p>
+        Ou, reorganizando, obtemos a equação diferencial ordinária de segunda ordem que descreve o sistema massa-mola:
+    </p>
+
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mfrac>
+            <mrow>
+            <msup>
+                <mi>d</mi>
+                <mn>2</mn>
+            </msup>
+            <mi>x</mi>
+            </mrow>
+            <mrow>
+            <mn>d</mn>
+            <msup>
+                <mi>t</mi>
+                <mi>2</mi>
+            </msup>
+            </mrow>
+        </mfrac>
+        <mo>=</mo>
+        <mo>-</mo>
+        <mfrac>
+            <mi>k</mi>
+            <mi>m</mi>
+        </mfrac>
+        <mo>&#8290;</mo>
+        <mi>x</mi>
+    </math>
+
+    <p>
+        <a href="index.html">Voltar</a>
+    </p>
+
+</body>
+</html>
